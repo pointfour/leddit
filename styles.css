@@ -1,0 +1,194 @@
+body {
+    --theme: 220;
+    --text: white;
+    background: hsl(var(--theme), 20%, 10%);
+    color: var(--text);
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.nav {
+    background: hsl(var(--theme), 70%, 30%);
+}
+
+.nav .title {
+    font-size: 200%;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    transition: 200ms background-color;
+}
+
+.nav .title:hover {
+    background: hsl(var(--theme), 70%, 35%);
+    transition: 200ms background-color;
+}
+
+.post {
+    background: hsl(var(--theme), 30%, 20%);
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: fit-content(100%) auto
+}
+
+.post .score {
+    font-size: 14px;
+}
+
+.post .title {
+    color: var(--text);
+}
+
+.post .left {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.post .right {
+    display: inline-block;
+}
+
+.time {
+    color: #aaa;
+    font-size: 80%;
+}
+
+.upvote {
+    border-bottom: var(--arowsize) solid var(--arrowcolor);
+    margin-bottom: 4px;
+}
+
+.downvote {
+    border-top: var(--arowsize) solid var(--arrowcolor);
+    margin-top: 4px;
+}
+
+.vote {
+    --arrowcolor: hsl(0, 0%, 67%);
+    --arowsize: 10px;
+    width: 0;
+    height: 0;
+    border-left: var(--arowsize) solid transparent;
+    border-right: var(--arowsize) solid transparent;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vote:hover {
+    --arrowcolor: hsl(0, 0%, 87%);
+}
+
+.apost {
+    margin: 60px 40px;
+    background: hsl(var(--theme), 30%, 20%);
+    padding: 10px;
+}
+
+.post-text-container {
+    display: grid;
+    grid-template-columns: fit-content(100%) auto
+}
+
+.post-text-container .votes {
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+a:-webkit-any-link {
+    color: hsl(190, 100%, 50%);
+}
+
+.post-text-container .title {
+    font-size: 130%;
+}
+
+.clean-link {
+    text-decoration: none;
+}
+
+.clean-link:hover {
+    text-decoration: underline;
+}
+
+.small {
+    font-size: 80%;
+}
+
+.grey {
+    color: #aaa;
+}
+
+.textColor {
+    color: var(--text) !important;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid hsl(var(--theme), 10%, 60%);
+    margin: 20px 50px;
+}
+
+.post-info {
+    margin-bottom: 5px;
+}
+
+.comment-container {
+    margin: 20px 0px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: fit-content(100%) auto
+}
+
+.comment-container .left div {
+    margin: 5px;
+}
+
+.comment-container .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.downline {
+    background: #aaa;
+    display: block;
+    height: 100%;
+    border-right: 8px solid hsl(var(--theme), 30%, 20%);
+    border-left: 8px solid hsl(var(--theme), 30%, 20%);
+    flex-grow: 1;
+    min-height: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.downline:hover {
+    background: hsl(0, 0%, 87%);
+}
+
+.hidden {
+    display: none;
+}
+
+.plus-button {
+    text-align: center;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: hsl(190, 100%, 50%);
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.plus-button:hover {
+    background: hsl(190, 100%, 70%);
+}
